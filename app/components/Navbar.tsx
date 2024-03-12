@@ -21,10 +21,11 @@ function Navbar() {
       {/* <h1 className="font-xl font-bold text-sky-800">.Dev</h1> */}
       <Image src={logo} alt="quid_logo" />
       <nav className={isOpen ? "flex" : " hidden md:flex"}>
-        <ul className="flex bg-white absolute md:relative flex-col md:flex-row w-full shadow md:shadow-none text-center top-12 left-0 md:top-0 md:flex">
+        <ul className="flex bg-white absolute md:relative flex-col md:flex-row w-full shadow md:shadow-none text-center top-12 left-10 md:top-0 md:flex">
           {listItems}
         </ul>
       </nav>
+        <button className="border border-[#EB632B] p-3 px-6 rounded-full text-[#EB632B]">Get Started</button>
       <div className="md:hidden">
         <button
           className="flex justify-center items-center"

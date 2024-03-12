@@ -25,7 +25,7 @@ function Navbar() {
           {listItems}
         </ul>
       </nav>
-        <button className="border border-[#EB632B] p-3 px-6 rounded-full text-[#EB632B]">Get Started</button>
+        <button className="hidden lg:flex md:flex border border-[#EB632B] p-3 px-6 rounded-full text-[#EB632B]">Get Started</button>
       <div className="md:hidden">
         <button
           className="flex justify-center items-center"

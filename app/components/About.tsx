@@ -3,8 +3,8 @@ import React from "react";
 const About = () => {
   return (
     <div className="justify-center m-4 border border-orange-400">
-      <div className="w-5/12 border m-auto">
-        <h1 className="text-center text-4xl font-semibold">
+      <div className="w-8/12 md:w-4/12 lg:w-5/12 border m-auto">
+        <h1 className="text-center text-2xl md:text-2xl lg:text-4xl font-semibold">
           Feel the best experience with our features
         </h1>
       </div>

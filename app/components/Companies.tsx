@@ -4,8 +4,8 @@ const Companies = () => {
   return (
     <div className="border m-12">
       <div className="p-4">
-        <div className="w-4/12 border m-auto">
-          <h1 className="text-center font-semibold text-4xl m-auto">
+        <div className="w-8/12 md:w-4/12 lg:w-5/12 border m-auto">
+          <h1 className="text-center text-2xl md:text-2xl lg:text-4xl font-semibold">
             200+ companies trust our products
           </h1>
         </div>

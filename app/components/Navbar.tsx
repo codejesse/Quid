@@ -6,7 +6,7 @@ import logo from "../../assets/quid_logo.png";
 const people = ["Products", "Pricing", "Blog", "Contact"];
 
 const listItems = people.map((person) => (
-  <li className="px-3 py-2 cursor-pointer rounded hover:bg-sky-100">
+  <li className="px-3 py-2 cursor-pointer rounded-full hover:text-[#EB632B]">
     {person}
   </li>
 ));
@@ -18,14 +18,18 @@ function Navbar() {
   };
   return (
     <div className="container relative m-auto p-3 flex justify-between items-center">
-      {/* <h1 className="font-xl font-bold text-sky-800">.Dev</h1> */}
-      <Image src={logo} alt="quid_logo" />
+      <div className="flex flex-row gap-2">
+        <Image width={40} src={logo} alt="quid_logo" />
+        <h1 className="font-xl font-bold text-[#EB632B] my-auto">Quid</h1>
+      </div>
       <nav className={isOpen ? "flex" : " hidden md:flex"}>
         <ul className="flex bg-white absolute md:relative flex-col md:flex-row w-full shadow md:shadow-none text-center top-12 left-10 md:top-0 md:flex">
           {listItems}
         </ul>
       </nav>
-        <button className="hidden lg:flex md:flex border border-[#EB632B] p-3 px-6 rounded-full text-[#EB632B]">Get Started</button>
+      <button className="hidden lg:flex md:flex border border-[#EB632B] p-2 px-6 rounded-full text-[#EB632B]">
+        Get Started
+      </button>
       <div className="md:hidden">
         <button
           className="flex justify-center items-center"
@@ -36,10 +40,10 @@ function Navbar() {
             width="24"
             height="24"
             stroke="currentColor"
-            stroke-width="2"
+            strokeWidth="2"
             fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className={isOpen ? "hidden" : "flex"}
           >
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -51,10 +55,10 @@ function Navbar() {
             width="24"
             height="24"
             stroke="currentColor"
-            stroke-width="2"
+            strokeWidth="2"
             fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className={isOpen ? "flex" : "hidden"}
           >
             <line x1="18" y1="6" x2="6" y2="18"></line>

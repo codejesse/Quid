@@ -20,7 +20,7 @@ const Testimonials = () => {
             className="w-10 h-10 rounded-full"
           />
           <div className="ml-4">
-            <h4 className="text-sm font-extrabold">John Doe</h4>
+            <h4 className="text-sm font-semibold">John Doe</h4>
             <p className="mt-1 text-xs text-gray-400">Founder of Rubik</p>
           </div>
         </div>
@@ -81,7 +81,7 @@ const Testimonials = () => {
             className="w-10 h-10 rounded-full"
           />
           <div className="ml-4">
-            <h4 className="text-sm font-extrabold">John Doe</h4>
+            <h4 className="text-sm font-semibold">John Doe</h4>
             <p className="mt-1 text-xs text-gray-400">Founder of Rubik</p>
           </div>
         </div>
@@ -142,7 +142,7 @@ const Testimonials = () => {
             className="w-10 h-10 rounded-full"
           />
           <div className="ml-4">
-            <h4 className="text-sm font-extrabold">John Doe</h4>
+            <h4 className="text-sm font-semibold">John Doe</h4>
             <p className="mt-1 text-xs text-gray-400">Founder of Rubik</p>
           </div>
         </div>
@@ -203,7 +203,7 @@ const Testimonials = () => {
             className="w-10 h-10 rounded-full"
           />
           <div className="ml-4">
-            <h4 className="text-sm font-extrabold">John Doe</h4>
+            <h4 className="text-sm font-semibold">John Doe</h4>
             <p className="mt-1 text-xs text-gray-400">Founder of Rubik</p>
           </div>
         </div>

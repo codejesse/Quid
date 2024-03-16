@@ -3,6 +3,7 @@ import Banner from "./components/Banner";
 import Companies from "./components/Companies";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Testimonials from "./components/Testimonials";
 
 // this will be the home page
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Companies />
       <Banner />
+      <Testimonials />
     </main>
   );
 }

@@ -22,8 +22,8 @@ function Navbar() {
         <Image width={40} src={logo} alt="quid_logo" />
         <h1 className="font-xl font-bold text-[#EB632B] my-auto">Quid</h1>
       </div>
-      <nav className={isOpen ? "flex" : " hidden md:flex"}>
-        <ul className="flex bg-white absolute md:relative flex-col md:flex-row w-full shadow md:shadow-none text-center top-12 left-10 md:top-0 md:flex">
+      <nav className={isOpen ? "flex border" : " hidden md:flex"}>
+        <ul className="flex bg-white absolute md:relative mx-auto flex-row md:flex-row w-full shadow md:shadow-none text-center top-12 left-10 md:top-0 md:flex">
           {listItems}
         </ul>
       </nav>

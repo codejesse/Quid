@@ -3,6 +3,8 @@ import { Marquee } from "@devnomic/marquee";
 import "@devnomic/marquee/dist/index.css";
 
 {/* make testimonial data come from sanity and mapped through it */}
+{/* to do: work on the wide and alignments */}
+{/* to do: font fixes*/}
 const Testimonials = () => {
   return (
     <Marquee

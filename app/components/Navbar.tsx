@@ -5,8 +5,8 @@ import logo from "../../assets/quid_logo.png";
 
 const people = ["Products", "Pricing", "Blog", "Contact"];
 
-const listItems = people.map((person) => (
-  <li className="px-3 py-2 cursor-pointer rounded-full hover:text-[#EB632B]">
+const listItems = people.map((person, id) => (
+  <li key={id} className="px-3 py-2 cursor-pointer rounded-full hover:text-[#EB632B]">
     {person}
   </li>
 ));

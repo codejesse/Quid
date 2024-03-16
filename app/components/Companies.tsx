@@ -4,9 +4,11 @@ const Companies = () => {
   return (
     <div className="border m-12">
       <div className="p-4">
-        <h1 className="text-center font-semibold text-4xl m-auto">
-          200+ companies trust our products
-        </h1>
+        <div className="w-4/12 border m-auto">
+          <h1 className="text-center font-semibold text-4xl m-auto">
+            200+ companies trust our products
+          </h1>
+        </div>
         <p className="text-center text-[15px] text-[#818181]">
           Transforming the future of finance organization, your Gateway to
           unparallel Fintech experience

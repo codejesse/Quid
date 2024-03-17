@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import hero_img from "../../assets/quid_hero(1).svg";
+import hero_img from "../../assets/quid_hero(2).svg";
 
 const Hero = () => {
   return (

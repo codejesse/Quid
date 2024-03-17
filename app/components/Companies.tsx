@@ -1,4 +1,9 @@
 import React from "react";
+import Image from "next/image";
+import stripe from "../../assets/stripe.svg";
+import dominos from "../../assets/dominos.svg";
+import mastercard from "../../assets/mastercard.svg";
+import visa from "../../assets/visa.svg";
 
 const Companies = () => {
   return (
@@ -9,21 +14,41 @@ const Companies = () => {
             200+ companies trust our products
           </h1>
         </div>
-        <p className="text-center text-[15px] text-[#818181]">
-          Transforming the future of finance organization, your Gateway to
-          unparallel Fintech experience
-        </p>
+        <div className="border m-auto w-4/12">
+          <p className="text-center text-[15px] text-[#818181]">
+            Transforming the future of finance organization, your Gateway to
+            unparallel Fintech experience
+          </p>
+        </div>
         {/* Companies */}
         <div className="grid grid-cols-5 place-items-center">
-          <div className="border">one</div>
-          <div className="border">two</div>
-          <div className="border">three</div>
-          <div className="border">four</div>
-          <div className="border">five</div>
-          <div className="border">Six</div>
-          <div className="border">Seven</div>
-          <div className="border">eight</div>
-          <div className="border">nine</div>
+          <div className="border">
+            <Image src={stripe} alt="stripe" />
+          </div>
+          <div className="border">
+            <Image src={dominos} alt="stripe" />
+          </div>
+          <div className="border">
+            <Image src={mastercard} alt="stripe" />
+          </div>
+          <div className="border">
+            <Image src={visa} alt="stripe" />
+          </div>
+          <div className="border">
+            <Image src={stripe} alt="stripe" />
+          </div>
+          <div className="border">
+            <Image src={stripe} alt="stripe" />
+          </div>
+          <div className="border">
+            <Image src={stripe} alt="stripe" />
+          </div>
+          <div className="border">
+            <Image src={stripe} alt="stripe" />
+          </div>
+          <div className="border">
+            <Image src={stripe} alt="stripe" />
+          </div>
         </div>
       </div>
     </div>

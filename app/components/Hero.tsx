@@ -1,6 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import hero_img from "../../assets/quid_hero(2).svg";
+import stripe from "../../assets/stripe.svg";
+import mastercard from "../../assets/mastercard.svg";
+import dominos from "../../assets/dominos.svg";
+import visa from "../../assets/visa.svg";
 
 const Hero = () => {
   return (
@@ -16,7 +20,7 @@ const Hero = () => {
           </p>
           <a
             href="#"
-            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-white font-medium text-center rounded-full bg-[#EB632B] hover:bg-[#EB632B]"
+            className="inline-flex items-center justify-center px-5 py-3 mr-8 text-white font-medium text-center rounded-full bg-[#EB632B] hover:bg-[#EB632B]"
           >
             Get started
             <svg
@@ -38,9 +42,24 @@ const Hero = () => {
           >
             Learn more
           </a>
+          <div className="mt-10">
+            <p className="text-[#818181]">Powered by:</p>
+            <div className="flex flex-row gap-5 ml-[-10px]">
+              <Image src={stripe} alt="stripe-logo" />
+              <Image src={mastercard} alt="stripe-logo" />
+              <Image src={dominos} alt="stripe-logo" />
+              <Image src={visa} alt="stripe-logo" />
+            </div>
+          </div>
         </div>
         <div className="lg:mt-0 lg:col-span-5 lg:flex">
-          <Image className="" width={850} height={850} src={hero_img} alt="hero_img" />
+          <Image
+            className=""
+            width={850}
+            height={850}
+            src={hero_img}
+            alt="hero_img"
+          />
         </div>
       </div>
     </section>

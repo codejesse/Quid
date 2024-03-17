@@ -5,6 +5,8 @@ import logo from "../../assets/quid_logo.png";
 
 const people = ["Products", "Pricing", "Blog", "Contact"];
 
+{/* Fix navlinks */}
+
 const listItems = people.map((person, id) => (
   <li key={id} className="px-3 py-2 cursor-pointer rounded-full hover:text-[#EB632B]">
     {person}
@@ -23,7 +25,7 @@ function Navbar() {
         <h1 className="font-xl font-bold text-[#EB632B] my-auto">Quid</h1>
       </div>
       <nav className={isOpen ? "flex" : " hidden md:flex"}>
-        <ul className="flex bg-white absolute md:relative mx-auto flex-col sm:flex-col md:flex-row w-full shadow md:shadow-none text-center top-12 left-10 lg:left-10 md:top-0 md:flex">
+        <ul className="flex gap-5 bg-white absolute md:relative mx-auto flex-row sm:flex-col md:flex-row w-full shadow md:shadow-none text-center top-12 left-0 lg:left-8 md:top-0 md:flex">
           {listItems}
         </ul>
       </nav>

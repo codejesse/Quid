@@ -31,17 +31,17 @@ const Footer = () => {
               <div className="mb-6 md:mb-0">
                 <a href="#" className="flex items-center">
                   <Image src={logo} alt="quid-logo" />
-                  <span className="self-center text-2xl ml-2 font-semibold whitespace-nowrap dark:text-white">
+                  <span className="self-center text-2xl ml-2 font-semibold whitespace-nowrap text-white">
                     Quid
                   </span>
                 </a>
               </div>
               <div className="grid grid-cols-2 gap-8 sm:gap-40 sm:grid-cols-3">
                 <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                  <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                     Contact
                   </h2>
-                  <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                  <ul className="text-white dark:text-gray-400 font-medium">
                     <li className="mb-4">
                       <a
                         href="https://flowbite.com/"
@@ -61,10 +61,10 @@ const Footer = () => {
                   </ul>
                 </div>
                 <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                  <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                     Explore
                   </h2>
-                  <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                  <ul className="text-white font-medium">
                     <li className="mb-4">
                       <a
                         href="https://github.com/themesberg/flowbite"
@@ -84,10 +84,10 @@ const Footer = () => {
                   </ul>
                 </div>
                 <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                  <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                     Support
                   </h2>
-                  <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                  <ul className="text-white font-medium">
                     <li className="mb-4">
                       <a href="#" className="hover:underline">
                         Privacy Policy

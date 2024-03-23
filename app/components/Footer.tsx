@@ -41,7 +41,7 @@ const Footer = () => {
                   <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                     Contact
                   </h2>
-                  <ul className="text-white dark:text-gray-400 font-medium">
+                  <ul className="text-white font-medium">
                     <li className="mb-4">
                       <a
                         href="https://flowbite.com/"

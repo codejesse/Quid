@@ -8,7 +8,7 @@ const people = ["Products", "Pricing", "Blog", "Contact"];
 {/* Fix navlinks alignment: mobile view */}
 
 const listItems = people.map((person, id) => (
-  <li key={id} className="px-3 py-2 cursor-pointer rounded-full hover:text-[#EB632B]">
+  <li key={id} className="px-3 py-2 cursor-pointer rounded-full text-[#818181] hover:text-[#EB632B]">
     {person}
   </li>
 ));

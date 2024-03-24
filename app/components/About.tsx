@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import grid_1 from "../../assets/grid-1.svg";
 import grid_2 from "../../assets/grid-2.png";
+import stats from "../../assets/stats.png";
 {
   /* Add padding or margin to bento grids container */
 }
@@ -38,6 +39,9 @@ const About = () => {
             Create financial goals and have access to your spending habits from
             one place.
           </p>
+          <div className="relative">
+            <Image className="absolute inset-y-0 right-0" src={stats} alt="stats" />
+          </div>
           <Image src={grid_2} alt="screens" />
         </div>
       </div>

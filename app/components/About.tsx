@@ -40,7 +40,7 @@ const About = () => {
             one place.
           </p>
           <div className="relative">
-            <Image className="absolute inset-y-0 right-0" src={stats} alt="stats" />
+            <Image className="absolute inset-y-0 right-0 lg:top-20" src={stats} alt="stats" />
           </div>
           <Image src={grid_2} alt="screens" />
         </div>

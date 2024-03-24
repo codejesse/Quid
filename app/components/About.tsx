@@ -1,5 +1,7 @@
 import React from "react";
-
+import Image from "next/image";
+import grid_1 from "../../assets/grid-1.svg";
+import grid_2 from "../../assets/grid-2.png";
 {
   /* Add padding or margin to bento grids container */
 }
@@ -13,7 +15,7 @@ const About = () => {
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 lg:m-12 p-4 border border-red-400">
-        <div className="bg-gray-100 h-[583px] rounded-xl p-5">
+        <div className="bg-gray-100 h-[583px] overflow-hidden rounded-xl p-5">
           <div className="w-10 h-10 bg-[#EB632B] rounded-full text-white">
             icon
           </div>
@@ -23,8 +25,9 @@ const About = () => {
           <p className="font-regular text-[#818181]">
             Our application gives you the power to create custom cards.
           </p>
+          <Image src={grid_1} alt="screens" />
         </div>
-        <div className="bg-gray-100 h-[583px] rounded-xl p-5">
+        <div className="bg-gray-100 overflow-hidden h-[583px] rounded-xl p-5">
           <div className="w-10 h-10 bg-[#EB632B] rounded-full text-white">
             icon
           </div>
@@ -35,6 +38,7 @@ const About = () => {
             Create financial goals and have access to your spending habits from
             one place.
           </p>
+          <Image src={grid_2} alt="screens" />
         </div>
       </div>
       <div className="p-4 lg:m-8">

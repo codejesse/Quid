@@ -14,14 +14,14 @@ const Companies = () => {
             200+ companies trust our products
           </h1>
         </div>
-        <div className="border m-auto w-4/12">
+        <div className="m-auto w-4/12">
           <p className="text-center text-[15px] text-[#818181]">
             Transforming the future of finance organization, your Gateway to
             unparallel Fintech experience
           </p>
         </div>
         {/* Companies */}
-        <div className="grid grid-cols-5 place-items-center">
+        <div className="grid grid-cols-5 place-items-center gap-4 mt-5">
           <div className="border">
             <Image src={stripe} alt="stripe" />
           </div>

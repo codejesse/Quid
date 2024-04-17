@@ -37,10 +37,10 @@ const About = () => {
               alt="card-icon"
             />
           </div>
-          <h3 className="w-7/12 text-2xl mt-5">
+          <h3 className="lg:w-7/12 text-2xl mt-5">
             Create custom online cards with ease.
           </h3>
-          <p className="font-regular w-7/12 text-[#818181] mt-2">
+          <p className="font-regular lg:w-7/12 text-[#818181] mt-2">
             Our application gives you the power to create custom cards.
           </p>
           <Image className="ml-[-30px]" src={grid_1} alt="screens" />
@@ -55,10 +55,10 @@ const About = () => {
               alt="stats-icon"
             />
           </div>
-          <h3 className="w-8/12 text-2xl mt-5">
+          <h3 className="lg:w-8/12 text-2xl mt-5">
             Personalized financial insights and goals.
           </h3>
-          <p className="font-regular w-8/12 text-[#818181] mt-2">
+          <p className="font-regular lg:w-8/12 text-[#818181] mt-2">
             Create financial goals and have access to your spending habits from
             one place.
           </p>
@@ -83,23 +83,23 @@ const About = () => {
               alt="card-icon"
             />
           </div>
-          <h3 className="w-4/12 text-2xl mt-10">
+          <h3 className="lg:w-4/12 text-2xl mt-10">
             Free transfers anywhere around the world
           </h3>
-          <p className="font-regular  w-5/12 text-[#818181]">
+          <p className="font-regular lg:w-4/12 mt-3 text-[#818181]">
             Experience the freedom of hassle-free transfers with our free
             transfer admin app. Say goodbye to hidden fees and charges.
           </p>
           <div className="relative">
             <Image
-              className="absolute z-[999] mt-[-30px] inset-y-0 right-0"
+              className="absolute z-[999] mt-[-150px] inset-y-0 right-0"
               src={grid_3}
               alt="screens"
             />
           </div>
           <div className="relative">
             <Image
-              className="absolute mt-[-50px] inset-y-0 right-0"
+              className="absolute mt-[-100px] inset-y-0 right-0"
               src={globe}
               alt="globe"
             />

@@ -7,6 +7,7 @@ import stats from "../../assets/stats.png";
 import globe from "../../assets/globe.svg";
 import currencies from "../../assets/currencies.svg";
 import invoice from "../../assets/icons/invoice.svg";
+import invoices from "../../assets/invoices.svg";
 
 //icons
 // import Card from "../../assets/icons/Card.svg";
@@ -105,7 +106,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10 lg:m-12 p-4 border border-red-400">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10 lg:m-12 p-4">
         <div className="bg-gray-100 h-[385px] rounded-[30px] p-8">
           <div className="w-14 h-14 bg-[#EB632B] rounded-full text-white">
             <Image
@@ -140,14 +141,29 @@ const About = () => {
             width={0}
             height={0}
             className="w-full"
-            src={currencies}
+            src={invoices}
             alt="currencies"
           />
         </div>
         <div className="bg-[#EB632B] h-[385px] rounded-[30px] bg-[url('/footer_bg.svg')] bg-right-top bg-contain">
-          <h2 className="text-white text-2xl w-8/12">
+          <h2 className="text-white text-4xl p-8">
             Check our more product detailed features
           </h2>
+          <button className="m-10 flex flex-row bg-white p-4 rounded-full">
+            View more{" "}
+            <svg
+              className="w-5 h-5 ml-2 -mr-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>
+            </svg>
+          </button>
         </div>
       </div>
     </div>

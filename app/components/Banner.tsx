@@ -34,22 +34,24 @@ const Banner = () => {
               </div>
             </button>
           </div>
-          <div className="relative">
-            <Image
-              className="absolute z-[999] mt-[-150px] inset-y-0 top-20"
-              height={500}
-              width={500}
-              src={Mockup}
-              alt="app_mockup"
-            />
-          </div>
-          <div className="relative">
-            <Image
-              height={500}
-              width={500}
-              src={Quid_banner_logo}
-              alt="logo_big"
-            />
+          <div className="m-auto">
+            <div className="relative">
+              <Image
+                className="absolute z-[999] mt-[-150px] inset-y-0 top-20"
+                height={500}
+                width={500}
+                src={Mockup}
+                alt="app_mockup"
+              />
+            </div>
+            <div className="relative">
+              <Image
+                height={500}
+                width={500}
+                src={Quid_banner_logo}
+                alt="logo_big"
+              />
+            </div>
           </div>
         </div>
       </div>

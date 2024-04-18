@@ -21,7 +21,7 @@ import Card_2 from "../../assets/icons/Card2.svg";
 const About = () => {
   return (
     <div className="justify-center m-4 mt-10">
-      <div className="w-8/12 md:w-4/12 lg:w-5/12 m-auto">
+      <div className="w-11/12 md:w-4/12 lg:w-5/12 m-auto">
         <h1 className="text-center text-2xl md:text-2xl lg:text-4xl font-semibold">
           Feel the best experience with our features
         </h1>

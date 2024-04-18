@@ -8,16 +8,18 @@ import PlayIcon from "../../assets/icons/GooglePlay.svg";
 
 const Banner = () => {
   return (
-    <div className="m-12">
+    <div className="m-4 lg:m-12">
       <div className="bg-[#F6F7F9] flex-col h-full rounded-[35px] w-full p-8">
-        <h1 className="text-center text-[45px] font-semibold tex-[#040404]">
+        <h1 className="text-center text-[35px] lg:text-[45px] font-semibold text-[#040404]">
           Get the fintech mobile app.
         </h1>
         <div className="flex border flex-col justify-center w-full">
-          <p className="text-center justify-center w-4/12 text-[#818181]">
-            Create financial goals and have access to your spending habits from
-            one place.
-          </p>
+          <div className="flex w-full">
+            <p className="text-center border justify-center text-[#818181]">
+              Create financial goals and have access to your spending habits
+              from one place.
+            </p>
+          </div>
           <div className="flex flex-col lg:flex-row gap-10">
             <button className="flex flex-row gap-4 border px-7 py-3 rounded-full">
               <Image width={35} height={35} src={AppleIcon} alt="Apple-icon" />
@@ -34,6 +36,7 @@ const Banner = () => {
               </div>
             </button>
           </div>
+
           <div className="m-auto">
             <div className="relative">
               <Image

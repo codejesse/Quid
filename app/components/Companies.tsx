@@ -11,6 +11,7 @@ import MacDonalds from "../../assets/macdonalds.svg";
 import Etsy from "../../assets/etsy.svg";
 import PayPal from "../../assets/paypal.svg";
 
+
 const Companies = () => {
   return (
     <div className="m-12">
@@ -27,7 +28,7 @@ const Companies = () => {
           </p>
         </div>
         {/* Companies */}
-        <div className="grid grid-cols-5 justify-center place-items-center gap-4 p-24 mt-[-25px]">
+        <div className="grid lg:grid-cols-5 justify-center place-items-center lg:gap-4 p-24 mt-[-25px]">
           <div className="border px-3 py-2 rounded-lg">
             <Image src={stripe} alt="stripe" />
           </div>

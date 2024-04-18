@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import hero_img from "../../assets/quid_hero(2).svg";
+import hero_img from "../../assets/quid_hero(3).svg";
 import stripe from "../../assets/stripe.svg";
 import mastercard from "../../assets/mastercard.svg";
 import dominos from "../../assets/dominos.svg";
@@ -44,11 +44,35 @@ const Hero = () => {
           </a>
           <div className="mt-10">
             <p className="text-[#818181]">Powered by:</p>
-            <div className="flex flex-row gap-5 ml-[-10px]">
-              <Image src={stripe} alt="stripe-logo" />
-              <Image src={mastercard} alt="stripe-logo" />
-              <Image src={dominos} alt="stripe-logo" />
-              <Image src={visa} alt="stripe-logo" />
+            <div className="flex flex-wrap lg:flex-row gap-5 ml-[-10px]">
+              <Image
+                width={40}
+                height={40}
+                className="w-2/12"
+                src={stripe}
+                alt="stripe-logo"
+              />
+              <Image
+                width={40}
+                height={40}
+                className="w-1/12"
+                src={mastercard}
+                alt="stripe-logo"
+              />
+              <Image
+                width={40}
+                height={40}
+                className="w-1/12"
+                src={dominos}
+                alt="stripe-logo"
+              />
+              <Image
+                width={40}
+                height={40}
+                className="w-2/12"
+                src={visa}
+                alt="stripe-logo"
+              />
             </div>
           </div>
         </div>

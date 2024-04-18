@@ -25,7 +25,7 @@ const Testimonials = () => {
         fade={true}
         pauseOnHover={true}
       >
-        <div className="max-w-[350px] h-auto lg:p-8 p-4 rounded-md bg-white border">
+        <div className="max-w-[286px] h-auto lg:p-8 p-4 rounded-[25px] bg-white border">
           <div className="mt-4">
             <p className="text-sm leading-relaxed">
               The service was amazing. I never had to wait that long for my
@@ -86,7 +86,7 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[350px] h-auto lg:p-8 p-4 rounded-md bg-white border">
+        <div className="max-w-[286px] h-auto lg:p-8 p-4 rounded-[25px] bg-white border">
           <div className="mt-4">
             <p className="text-sm leading-relaxed">
               The service was amazing. I never had to wait that long for my
@@ -147,7 +147,7 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[350px] h-auto lg:p-8 p-4 rounded-md bg-white border">
+        <div className="max-w-[286px] h-auto lg:p-8 p-4 rounded-[25px] bg-white border">
           <div className="mt-4">
             <p className="text-sm leading-relaxed">
               The service was amazing. I never had to wait that long for my
@@ -208,7 +208,7 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[350px] h-auto lg:p-8 p-4 rounded-md bg-white border">
+        <div className="max-w-[286px] h-auto lg:p-8 p-4 rounded-[25px] bg-white border">
           <div className="mt-4">
             <p className="text-sm leading-relaxed">
               The service was amazing. I never had to wait that long for my

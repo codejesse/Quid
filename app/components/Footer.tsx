@@ -13,10 +13,10 @@ const Footer = () => {
           <p className="text-[15px] text-white font-regular">
             Join our newsletter to stay up to date with latest updates
           </p>
-          <div className="flex justify-end gap-2">
+          <div className="flex lg:justify-end gap-2">
             <input
               placeholder="Enter email address"
-              className="p-5 py-7 w-3/12 h-10 bg-white rounded-full float-right"
+              className="p-5 py-7 w-full mt-4 lg:mt-0 lg:w-3/12 h-10 bg-white rounded-full float-right"
             />
             <button className="p-4 px-5 bg-black rounded-full text-white">
               Subscribe

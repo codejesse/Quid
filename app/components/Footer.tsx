@@ -7,27 +7,24 @@ const Footer = () => {
     <footer className="m-4 lg:m-12">
       <div className="bg-[#EB632B] h-[778px] rounded-xl w-full bg-[url('/footer_bg.svg')] bg-no-repeat bg-right-top">
         <div className="p-10">
-          <div className="w-10 h-10 bg-white rounded-full"></div>
           <h1 className="text-white text-[50px] mt-4 leading-11 w-12/12 md:w-7/12 lg:w-5/12">
             Keep up with the latest
           </h1>
-          <div className="flex flex-col md:flex-col lg:flex-row border">
-            <p className="text-[15px] text-white font-regular">
-              Join our newsletter to stay up to date with latest updates
-            </p>
-            <div className="flex gap-2">
-              <input
-                placeholder="Enter email address"
-                className="p-5 py-7 w-3/12 h-10 bg-white rounded-full float-right"
-              />
-              <button className="p-4 px-5 bg-black rounded-full text-white">
-                Subscribe
-              </button>
-            </div>
+          <p className="text-[15px] text-white font-regular">
+            Join our newsletter to stay up to date with latest updates
+          </p>
+          <div className="flex justify-end gap-2">
+            <input
+              placeholder="Enter email address"
+              className="p-5 py-7 w-3/12 h-10 bg-white rounded-full float-right"
+            />
+            <button className="p-4 px-5 bg-black rounded-full text-white">
+              Subscribe
+            </button>
           </div>
           <hr className="h-px my-8 bg-white border-0"></hr>
           <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-            <div className="md:flex md:justify-between">
+            <div className="md:flex md:justify-between ">
               <div className="mb-6 md:mb-0">
                 <a href="#" className="flex items-center">
                   <Image src={logo} alt="quid-logo" />
@@ -47,7 +44,7 @@ const Footer = () => {
                         href="https://flowbite.com/"
                         className="hover:underline"
                       >
-                        Flowbite
+                        +12347783907
                       </a>
                     </li>
                     <li>
@@ -55,7 +52,7 @@ const Footer = () => {
                         href="https://tailwindcss.com/"
                         className="hover:underline"
                       >
-                        Tailwind CSS
+                        hello@fintech.app
                       </a>
                     </li>
                   </ul>
@@ -96,6 +93,18 @@ const Footer = () => {
                     <li>
                       <a href="#" className="hover:underline">
                         Terms &amp; Conditions
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h2 className="lg:mt-[-100px] mb:mt-[-100px] sm:mt-[-100px] mb-6 text-sm font-semibold text-white uppercase">
+                    Address
+                  </h2>
+                  <ul className="text-white font-medium">
+                    <li className="mb-4">
+                      <a href="" className="hover:underline text-[15px]">
+                        5432B Avenue Lane New York United States of America
                       </a>
                     </li>
                   </ul>

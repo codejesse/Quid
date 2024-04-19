@@ -54,8 +54,8 @@ const Banner = () => {
             <div className="relative">
               <Image
                 className="absolute z-[999] mt-[-150px] inset-y-0 top-20"
-                height={500}
-                width={500}
+                height={850}
+                width={850}
                 src={Mockup}
                 alt="app_mockup"
               />

@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="m-4 lg:m-12">
-      <div className="bg-[#EB632B] h-[778px] rounded-xl w-full bg-[url('/footer_bg.svg')] bg-no-repeat bg-right-top">
+    <footer className="m-4 lg:m-12 pt-24">
+      <div className="bg-[#EB632B] h-full lg:h-[778px] rounded-[25px] w-full bg-[url('/footer_bg.svg')] bg-no-repeat bg-right-top">
         <div className="p-10">
           <h1 className="text-white text-[50px] mt-4 leading-11 w-12/12 md:w-7/12 lg:w-5/12">
             Keep up with the latest
@@ -52,7 +52,7 @@ const Footer = () => {
                     <li className="mb-4">
                       <a
                         href="https://flowbite.com/"
-                        className="hover:underline"
+                        className="hover:underline text-[15px] font-light"
                       >
                         +12347783907
                       </a>
@@ -60,7 +60,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="https://tailwindcss.com/"
-                        className="hover:underline"
+                        className="hover:underline text-[15px] font-light"
                       >
                         hello@fintech.app
                       </a>
@@ -75,17 +75,17 @@ const Footer = () => {
                     <li className="mb-4">
                       <a
                         href="https://github.com/themesberg/flowbite"
-                        className="hover:underline "
+                        className="hover:underline text-[15px] font-light"
                       >
-                        Github
+                        Home
                       </a>
                     </li>
                     <li>
                       <a
                         href="https://discord.gg/4eeurUVvTy"
-                        className="hover:underline"
+                        className="hover:underline text-[15px] font-light"
                       >
-                        Discord
+                        Why Quid
                       </a>
                     </li>
                   </ul>
@@ -96,12 +96,12 @@ const Footer = () => {
                   </h2>
                   <ul className="text-white font-medium">
                     <li className="mb-4">
-                      <a href="#" className="hover:underline">
+                      <a href="#" className="hover:underline text-[15px] font-light">
                         Privacy Policy
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="hover:underline">
+                      <a href="#" className="hover:underline text-[15px] font-light">
                         Terms &amp; Conditions
                       </a>
                     </li>
@@ -113,7 +113,7 @@ const Footer = () => {
                   </h2>
                   <ul className="text-white font-medium">
                     <li className="mb-4 w-full">
-                      <a href="" className="hover:underline text-[15px]">
+                      <a href="" className="hover:underline text-[15px] font-light">
                         5432B Avenue Lane New York United States of America
                       </a>
                     </li>

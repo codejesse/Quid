@@ -8,7 +8,7 @@ import PlayIcon from "../../assets/icons/GooglePlay.svg";
 
 const Banner = () => {
   return (
-    <div className="m-4 lg:m-12">
+    <div className="m-4 pb-24 lg:m-12">
       <div className="bg-[#F6F7F9] flex-col h-full rounded-[35px] w-full p-8">
         <h1 className="text-center text-[35px] lg:text-[45px] font-semibold text-[#040404]">
           Get the fintech mobile app.

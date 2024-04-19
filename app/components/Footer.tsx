@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="m-12">
+    <footer className="m-4 lg:m-12">
       <div className="bg-[#EB632B] h-[778px] rounded-xl w-full bg-[url('/footer_bg.svg')] bg-no-repeat bg-right-top">
         <div className="p-10">
           <div className="w-10 h-10 bg-white rounded-full"></div>

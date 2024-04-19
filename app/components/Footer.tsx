@@ -25,13 +25,23 @@ const Footer = () => {
           <hr className="h-px my-8 bg-white border-0"></hr>
           <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div className="md:flex md:justify-between ">
-              <div className="mb-6 md:mb-0">
+              <div className="mb-6 md:mb-0 lg:mr-40">
                 <a href="#" className="flex items-center">
                   <Image src={logo} alt="quid-logo" />
                   <span className="self-center text-2xl ml-2 font-semibold whitespace-nowrap text-white">
                     Quid
                   </span>
                 </a>
+
+                <div className="flex flex-col md:mt-40 lg:mt-40">
+                  <p className="text-[15px] text-white">Manage your finances with our easy to use application.</p>
+                  <div className="flex flex-row gap-3">
+                    <div className="bg-white w-[30px] h-[30px] rounded-full"></div>
+                    <div className="bg-white w-[30px] h-[30px] rounded-full"></div>
+                    <div className="bg-white w-[30px] h-[30px] rounded-full"></div>
+                    <div className="bg-white w-[30px] h-[30px] rounded-full"></div>
+                  </div>
+                </div>
               </div>
               <div className="grid grid-cols-2 gap-8 sm:gap-40 sm:grid-cols-3">
                 <div>
@@ -102,7 +112,7 @@ const Footer = () => {
                     Address
                   </h2>
                   <ul className="text-white font-medium">
-                    <li className="mb-4">
+                    <li className="mb-4 w-full">
                       <a href="" className="hover:underline text-[15px]">
                         5432B Avenue Lane New York United States of America
                       </a>

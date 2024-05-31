@@ -1,6 +1,12 @@
 import { createClient } from "@/prismicio";
 import { PrismicNextLink } from "@prismicio/next";
 import Link from "next/link";
+import LogoWhite from "./LogoWhite";
+
+//icons
+import Xicon from "./icons/Xicon";
+import Medium from "./icons/Medium";
+import Linkedin from "./icons/Linkedin";
 
 export default async function Footer() {
   const client = createClient();
@@ -31,20 +37,23 @@ export default async function Footer() {
             <div className="md:flex md:justify-between ">
               <div className="mb-6 md:mb-0 lg:mr-40">
                 <Link href="/" className="flex items-center">
-                  {/* <Image src={logo} alt="quid-logo" /> */}
-                  {/* CHORE: create logo component and import */}
-                  {settings.data.site_title}
-                  <span className="self-center text-2xl ml-2 font-semibold whitespace-nowrap text-white">
-                    Quid
-                  </span>
+                  <LogoWhite />
                 </Link>
 
                 <div className="flex flex-col md:mt-40 lg:mt-40">
-                  <p className="text-[15px] text-white">Manage your finances with our easy to use application.</p>
+                  <p className="text-[15px] text-white">
+                    Manage your finances with our easy to use application.
+                  </p>
                   <div className="flex flex-row gap-3">
-                    <div className="bg-white w-[30px] h-[30px] rounded-full"></div>
-                    <div className="bg-white w-[30px] h-[30px] rounded-full"></div>
-                    <div className="bg-white w-[30px] h-[30px] rounded-full"></div>
+                    <div className="bg-white w-[30px] h-[30px] rounded-full">
+                      <Xicon />
+                    </div>
+                    <div className="bg-white w-[30px] h-[30px] rounded-full">
+                      <Linkedin />
+                    </div>
+                    <div className="bg-white w-[30px] h-[30px] rounded-full">
+                      <Medium />
+                    </div>
                     <div className="bg-white w-[30px] h-[30px] rounded-full"></div>
                   </div>
                 </div>
@@ -102,12 +111,18 @@ export default async function Footer() {
                   </h2>
                   <ul className="text-white font-medium">
                     <li className="mb-4">
-                      <a href="#" className="hover:underline text-[15px] font-light">
+                      <a
+                        href="#"
+                        className="hover:underline text-[15px] font-light"
+                      >
                         Privacy Policy
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="hover:underline text-[15px] font-light">
+                      <a
+                        href="#"
+                        className="hover:underline text-[15px] font-light"
+                      >
                         Terms &amp; Conditions
                       </a>
                     </li>
@@ -119,7 +134,10 @@ export default async function Footer() {
                   </h2>
                   <ul className="text-white font-medium">
                     <li className="mb-4 w-full">
-                      <a href="" className="hover:underline text-[15px] font-light">
+                      <a
+                        href=""
+                        className="hover:underline text-[15px] font-light"
+                      >
                         5432B Avenue Lane New York United States of America
                       </a>
                     </li>

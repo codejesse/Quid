@@ -8,13 +8,12 @@ import { HeroProps } from "@/slices/Hero";
 import { useState } from "react";
 
 export default async function Header() {
-
   const client = createClient();
 
   const settings = await client.getSingle("settings");
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-8">
+    <nav className="flex items-center justify-between flex-wrap p-8 lg:px-14">
       <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
         <Logo />
       </div>
@@ -42,68 +41,26 @@ export default async function Header() {
       <div
         className={`w-full hidden flex-grow lg:flex lg:items-center lg:w-auto`}
       >
-        <div className="text-sm lg:flex-grow">
-          <a
-            href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-          >
-            First Link
-          </a>
-          <a
-            href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-          >
-            Second Link
-          </a>
-          <a
-            href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-          >
-            Third Link
-          </a>
-          <a
-            href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
-          >
-            Fourth Link
-          </a>
+        <div className="text-md lg:flex-grow">
+          <ul className="flex">
+            {settings.data.navigation.map(({ link, label }) => (
+              <li
+                key={label}
+                className="text-center px-3 py-2 cursor-pointer rounded-full text-[#818181] hover:text-[#EB632B]"
+              >
+                <PrismicNextLink field={link} className="p-3">
+                  {label}
+                </PrismicNextLink>
+              </li>
+            ))}
+          </ul>
         </div>
         <div>
           <button className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-[#EB632B] border border-[#EB632B] rounded-full hover:bg-[##e8885f]">
-            Get start
+            Get started
           </button>
         </div>
       </div>
     </nav>
   );
-
-  // return (
-  //   <div className="border m-auto p-3">
-  //     <div className="flex">
-  //       <div>
-  //         <Link className="" href="/">
-  //           <Logo />
-  //         </Link>
-  //       </div>
-
-  //       <nav className="border flex">
-  //         <ul className="flex">
-  //           {settings.data.navigation.map(({ link, label }) => (
-  //             <li
-  //               key={label}
-  //               className="text-center px-3 py-2 cursor-pointer rounded-full text-[#818181] hover:text-[#EB632B]"
-  //             >
-  //               <PrismicNextLink field={link} className="p-3">
-  //                 {label}
-  //               </PrismicNextLink>
-  //             </li>
-  //           ))}
-  //         </ul>
-  //       </nav>
-  //       <button className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-[#EB632B] border border-[#EB632B] rounded-full hover:bg-[##e8885f]">
-  //         Get started
-  //       </button>
-  //     </div>
-  //   </div>
-  // );
 }

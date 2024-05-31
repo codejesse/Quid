@@ -209,6 +209,205 @@ export type SettingsDocument<Lang extends string = string> =
 export type AllDocumentTypes = HomepageDocument | SettingsDocument;
 
 /**
+ * Item in *Features → Default → Primary → Feature Blocks*
+ */
+export interface FeaturesSliceDefaultPrimaryFeatureBlocksItem {
+  /**
+   * icon field in *Features → Default → Primary → Feature Blocks*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.default.primary.feature_blocks[].icon
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  icon: prismic.SelectField<"Cards" | "Analytics">;
+
+  /**
+   * image field in *Features → Default → Primary → Feature Blocks*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.default.primary.feature_blocks[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Title field in *Features → Default → Primary → Feature Blocks*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.default.primary.feature_blocks[].title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * description field in *Features → Default → Primary → Feature Blocks*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.default.primary.feature_blocks[].description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+}
+
+/**
+ * Item in *Features → Default → Primary → Features Block Bottom*
+ */
+export interface FeaturesSliceDefaultPrimaryFeaturesBlockBottomItem {
+  /**
+   * icon field in *Features → Default → Primary → Features Block Bottom*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.default.primary.features_block_bottom[].icon
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  icon: prismic.SelectField<"Exchange" | "Invoice">;
+
+  /**
+   * Features Block Bottom Title field in *Features → Default → Primary → Features Block Bottom*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.default.primary.features_block_bottom[].features_block_bottom_title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  features_block_bottom_title: prismic.RichTextField;
+
+  /**
+   * Features Block Bottom Image field in *Features → Default → Primary → Features Block Bottom*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.default.primary.features_block_bottom[].features_block_bottom_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  features_block_bottom_image: prismic.ImageField<never>;
+}
+
+/**
+ * Primary content in *Features → Default → Primary*
+ */
+export interface FeaturesSliceDefaultPrimary {
+  /**
+   * Heading field in *Features → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.default.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.RichTextField;
+
+  /**
+   * Feature Blocks field in *Features → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.default.primary.feature_blocks[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  feature_blocks: prismic.GroupField<
+    Simplify<FeaturesSliceDefaultPrimaryFeatureBlocksItem>
+  >;
+
+  /**
+   * icon field in *Features → Default → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.default.primary.icon
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  icon: prismic.SelectField<"Transfers" | "Cash">;
+
+  /**
+   * Feature Banner Title field in *Features → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.default.primary.feature_banner_title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  feature_banner_title: prismic.RichTextField;
+
+  /**
+   * Feature Banner Description field in *Features → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.default.primary.feature_banner_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  feature_banner_description: prismic.RichTextField;
+
+  /**
+   * Feature Banner Image field in *Features → Default → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.default.primary.feature_banner_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  feature_banner_image: prismic.ImageField<never>;
+
+  /**
+   * Banner Globe field in *Features → Default → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.default.primary.banner_globe
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  banner_globe: prismic.ImageField<never>;
+
+  /**
+   * Features Block Bottom field in *Features → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.default.primary.features_block_bottom[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  features_block_bottom: prismic.GroupField<
+    Simplify<FeaturesSliceDefaultPrimaryFeaturesBlockBottomItem>
+  >;
+}
+
+/**
+ * Default variation for Features Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FeaturesSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<FeaturesSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Features*
+ */
+type FeaturesSliceVariation = FeaturesSliceDefault;
+
+/**
+ * Features Shared Slice
+ *
+ * - **API ID**: `features`
+ * - **Description**: Features
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FeaturesSlice = prismic.SharedSlice<
+  "features",
+  FeaturesSliceVariation
+>;
+
+/**
  * Item in *Hero → Default → Primary → Powered By*
  */
 export interface HeroSliceDefaultPrimaryPoweredByItem {
@@ -355,6 +554,12 @@ declare module "@prismicio/client" {
       SettingsDocumentDataNavigationItem,
       SettingsDocumentDataFooterItem,
       AllDocumentTypes,
+      FeaturesSlice,
+      FeaturesSliceDefaultPrimaryFeatureBlocksItem,
+      FeaturesSliceDefaultPrimaryFeaturesBlockBottomItem,
+      FeaturesSliceDefaultPrimary,
+      FeaturesSliceVariation,
+      FeaturesSliceDefault,
       HeroSlice,
       HeroSliceDefaultPrimaryPoweredByItem,
       HeroSliceDefaultPrimary,

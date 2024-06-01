@@ -81,12 +81,12 @@ const Features = ({ slice }: FeaturesProps): JSX.Element => {
               <div className="mx-auto py-2">{icons[slice.primary.icon]}</div>
             )}
           </div>
-          <h3 className="lg:w-4/12 text-2xl mt-10">
+          <div className="lg:w-4/12 text-2xl mt-10">
             <PrismicRichText field={slice.primary.feature_banner_title} />
-          </h3>
-          <p className="font-regular lg:w-4/12 mt-3 text-[#818181]">
+          </div>
+          <div className="font-regular lg:w-4/12 mt-3 text-[#818181]">
             <PrismicRichText field={slice.primary.feature_banner_description} />
-          </p>
+          </div>
           <div className="relative">
             <div className="absolute z-[999] lg:mt-[-150px] inset-y-0 right-0">
               <PrismicNextImage field={slice.primary.feature_banner_image} />
@@ -113,9 +113,9 @@ const Features = ({ slice }: FeaturesProps): JSX.Element => {
                 <div className="mx-auto py-2">{icons[item.icon]}</div>
               )}
             </div>
-            <h2 className="text-[30px] mt-10">
+            <div className="text-[30px] mt-10">
               <PrismicRichText field={item.features_block_bottom_title} />
-            </h2>
+            </div>
             <div className="w-full">
               <PrismicNextImage field={item.features_block_bottom_image} />
             </div>

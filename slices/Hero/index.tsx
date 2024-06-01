@@ -13,7 +13,11 @@ import Heading from "@/components/Heading";
 
 const components: JSXMapSerializer = {
   heading1: ({ children }) => (
-    <Heading as="h1" size="xl" className="md:mb-8 mb-4 mt-12 first:mt-0 last:mb-0">
+    <Heading
+      as="h1"
+      size="xl"
+      className="md:mb-8 mb-4 mt-12 first:mt-0 last:mb-0"
+    >
       {children}
     </Heading>
   ),
@@ -56,13 +60,13 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           <p className="text-[#818181]">Powered by:</p>
           <div className="flex flex-wrap lg:flex-row gap-5 ml-[-10px]">
             <>
-              {slice.primary.powered_by.map((item) => {
+              {slice.primary.powered_by.map((item) => (
                 // Render the item
                 <PrismicNextImage
                   field={item.company_logo}
-                  className="w-2/12"
-                />;
-              })}
+                  className="w-17"
+                />
+              ))}
             </>
           </div>
         </div>

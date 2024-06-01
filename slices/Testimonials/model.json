@@ -21,14 +21,23 @@
             "multi": "heading2"
           }
         },
-        "testimonials": {
-          "type": "Link",
+        "testies": {
+          "type": "Group",
           "config": {
-            "label": "Testimonials",
-            "select": "document",
-            "customtypes": [
-              "testimonial"
-            ]
+            "label": "Testies",
+            "repeat": true,
+            "fields": {
+              "testimonials": {
+                "type": "Link",
+                "config": {
+                  "label": "Testimonials",
+                  "select": "document",
+                  "customtypes": [
+                    "testimonial"
+                  ]
+                }
+              }
+            }
           }
         }
       },

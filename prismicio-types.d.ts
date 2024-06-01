@@ -5,6 +5,7 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
 type HomepageDocumentDataSlicesSlice =
+  | TestimonialsSlice
   | CompaniesSlice
   | FeaturesSlice
   | HeroSlice;
@@ -690,6 +691,21 @@ type HeroSliceVariation = HeroSliceDefault;
 export type HeroSlice = prismic.SharedSlice<"hero", HeroSliceVariation>;
 
 /**
+ * Item in *Testimonials → Default → Primary → Testies*
+ */
+export interface TestimonialsSliceDefaultPrimaryTestiesItem {
+  /**
+   * Testimonials field in *Testimonials → Default → Primary → Testies*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: testimonials.default.primary.testies[].testimonials
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  testimonials: prismic.ContentRelationshipField<"testimonial">;
+}
+
+/**
  * Primary content in *Testimonials → Default → Primary*
  */
 export interface TestimonialsSliceDefaultPrimary {
@@ -704,14 +720,16 @@ export interface TestimonialsSliceDefaultPrimary {
   heading: prismic.RichTextField;
 
   /**
-   * Testimonials field in *Testimonials → Default → Primary*
+   * Testies field in *Testimonials → Default → Primary*
    *
-   * - **Field Type**: Content Relationship
+   * - **Field Type**: Group
    * - **Placeholder**: *None*
-   * - **API ID Path**: testimonials.default.primary.testimonials
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   * - **API ID Path**: testimonials.default.primary.testies[]
+   * - **Documentation**: https://prismic.io/docs/field#group
    */
-  testimonials: prismic.ContentRelationshipField<"testimonial">;
+  testies: prismic.GroupField<
+    Simplify<TestimonialsSliceDefaultPrimaryTestiesItem>
+  >;
 }
 
 /**
@@ -781,6 +799,7 @@ declare module "@prismicio/client" {
       HeroSliceVariation,
       HeroSliceDefault,
       TestimonialsSlice,
+      TestimonialsSliceDefaultPrimaryTestiesItem,
       TestimonialsSliceDefaultPrimary,
       TestimonialsSliceVariation,
       TestimonialsSliceDefault,

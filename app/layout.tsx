@@ -4,6 +4,7 @@ import "./globals.css";
 import { createClient } from "@/prismicio";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ActionButton from "@/components/ActionButton";
 
 const syne = Syne({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body className={syne.className}>
         <Header />
         {children}
+        <ActionButton />
         <Footer />
       </body>
     </html>

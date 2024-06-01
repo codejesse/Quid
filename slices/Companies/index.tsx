@@ -1,3 +1,4 @@
+import Banner from "@/components/Banner";
 import { Content } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
 import {
@@ -54,6 +55,7 @@ const Companies = ({ slice }: CompaniesProps): JSX.Element => {
             ))}
         </div>
       </div>
+      <Banner />
     </section>
   );
 };

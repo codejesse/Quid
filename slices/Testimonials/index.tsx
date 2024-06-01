@@ -7,6 +7,7 @@ import {
 import { Marquee } from "@devnomic/marquee";
 import "@devnomic/marquee/dist/index.css";
 import { createClient } from "@/prismicio";
+import { PrismicNextImage } from "@prismicio/next";
 
 const components: JSXMapSerializer = {
   heading2: ({ children }) => (
@@ -16,6 +17,9 @@ const components: JSXMapSerializer = {
   ),
   heading3: ({ children }) => (
     <h3 className="lg:w-7/12 text-2xl mt-5">{children}</h3>
+  ),
+  heading4: ({ children }) => (
+    <h4 className="text-sm font-semibold">{children}</h4>
   ),
   paragraph: ({ children }) => (
     <p className="text-sm leading-relaxed">{children}</p>
@@ -63,70 +67,76 @@ const Testimonials = async ({
         fade={true}
         pauseOnHover={true}
       >
-        {testimonials.map((item, index) => item && (
-          <div key={index} className="max-w-[286px] h-auto lg:p-8 p-4 rounded-[25px] bg-white border">
-            <div className="mt-4">
-              <PrismicRichText field={item.data.quote} />
-              {/* <p className="text-sm leading-relaxed">
-                The service was amazing. I never had to wait that long for my
-                food. The staff was friendly and attentive, and the delivery was
-                impressively prompt.
-              </p> */}
-            </div>
-            <div className="flex space-x-2 mt-4">
-              <svg
-                className="w-4 fill-[#facc15]"
-                viewBox="0 0 14 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+        {testimonials.map(
+          (item, index) =>
+            item && (
+              <div
+                key={index}
+                className="max-w-[286px] h-auto lg:p-8 p-4 rounded-[25px] bg-white border"
               >
-                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
-              </svg>
-              <svg
-                className="w-4 fill-[#facc15]"
-                viewBox="0 0 14 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
-              </svg>
-              <svg
-                className="w-4 fill-[#facc15]"
-                viewBox="0 0 14 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
-              </svg>
-              <svg
-                className="w-4 fill-[#CED5D8]"
-                viewBox="0 0 14 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
-              </svg>
-              <svg
-                className="w-4 fill-[#CED5D8]"
-                viewBox="0 0 14 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
-              </svg>
-            </div>
-            <div className="flex items-center mt-4">
-              <img
-                src="https://readymadeui.com/profile_2.webp"
-                className="w-10 h-10 rounded-full"
-              />
-              <div className="ml-4">
-                <h4 className="text-sm font-semibold">John Doe</h4>
-                <div className="mt-1 text-xs text-gray-400">Founder of Rubik</div>
+                <div className="mt-4 text-[#818181]">
+                  <PrismicRichText field={item.data.quote} />
+                  {/*CHORE: create logic for ratings */}
+                </div>
+                <div className="flex space-x-2 mt-4">
+                  <svg
+                    className="w-4 fill-[#facc15]"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                  </svg>
+                  <svg
+                    className="w-4 fill-[#facc15]"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                  </svg>
+                  <svg
+                    className="w-4 fill-[#facc15]"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                  </svg>
+                  <svg
+                    className="w-4 fill-[#CED5D8]"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                  </svg>
+                  <svg
+                    className="w-4 fill-[#CED5D8]"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                  </svg>
+                </div>
+                <div className="flex items-center mt-4">
+                  <PrismicNextImage
+                    className="w-10 h-10 rounded-full"
+                    field={item.data.avatar}
+                    imgixParams={{ ar: "1:1", fit: "crop" }}
+                  />
+                  <div className="ml-4">
+                    {/* */}
+                    <h4 className="text-sm font-semibold">{item.data.name}</h4>
+                    <div className="mt-1 text-xs text-gray-400">
+                      {item.data.job_title}
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            )
+        )}
       </Marquee>
     </section>
   );

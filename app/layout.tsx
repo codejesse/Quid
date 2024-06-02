@@ -1,10 +1,11 @@
 import type { Metadata, ResolvingMetadata } from "next";
 import { Syne } from "next/font/google";
 import "./globals.css";
-import { createClient } from "@/prismicio";
+import { createClient, repositoryName } from "@/prismicio";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ActionButton from "@/components/ActionButton";
+import { PrismicPreview } from "@prismicio/next";
 
 const syne = Syne({ subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default function RootLayout({
         {children}
         <ActionButton />
         <Footer />
+        <PrismicPreview repositoryName={repositoryName} />
       </body>
     </html>
   );

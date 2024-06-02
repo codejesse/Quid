@@ -35,7 +35,7 @@ const Pricing = ({ slice }: PricingProps): JSX.Element => {
                 {/* {console.log(item.type)} */}
                 <div
                   key={index}
-                  className={`flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-[15px] border border-[F4F4F4] drop-shadow-2xl xl:p-8 ${item.type === "Professional" ? "border-[#EB632B]" : "drop-shadow-2xl-[#EB632B]"}`}
+                  className={`flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-[15px] border border-[F4F4F4] drop-shadow-2xl xl:p-8 ${item.type === "Professional" ? "border-[#EB632B]" : "[0_35px_35px_rgb(235, 99, 43)]"}`}
                 >
                   {item.type === "Professional" ? (
                     <div className="border border-[#EB632B] bg-white absolute rounded-[25px] w-fit px-4 p-2 lg:bottom-[450px]">

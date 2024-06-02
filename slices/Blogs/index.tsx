@@ -39,7 +39,7 @@ const Blogs = async ({ slice }: BlogsProps): Promise<JSX.Element> => {
             {slice.primary.description}
           </p>
         </div>
-        <div className="grid gap-8 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {blogs.map(
             (item, index) =>
               item && (
@@ -47,7 +47,7 @@ const Blogs = async ({ slice }: BlogsProps): Promise<JSX.Element> => {
                   <div className="flex justify-between items-center mb-5 text-gray-500">
                   </div>
                   <div className="border rounded-[15px]">
-                    <PrismicNextImage field={item.data.blog_image} />
+                    <PrismicNextImage className="object-fit" field={item.data.blog_image} />
                   </div>
                   <span className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
                       <svg

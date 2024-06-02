@@ -1,0 +1,52 @@
+{
+  "id": "blogs",
+  "type": "SharedSlice",
+  "name": "Blogs",
+  "description": "Blogs",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "Heading",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "Description",
+            "placeholder": ""
+          }
+        },
+        "blogs": {
+          "type": "Group",
+          "config": {
+            "label": "Blogs",
+            "repeat": true,
+            "fields": {
+              "blog_posts": {
+                "type": "Link",
+                "config": {
+                  "label": "Blog Posts",
+                  "select": "document",
+                  "customtypes": [
+                    "blogs"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

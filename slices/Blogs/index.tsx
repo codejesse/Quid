@@ -8,9 +8,6 @@ import { PrismicNextImage } from "@prismicio/next";
  */
 export type BlogsProps = SliceComponentProps<Content.BlogsSlice>;
 
-/**
- * Component for "Blogs" Slices.
- */
 
 const Blogs = async ({ slice }: BlogsProps): Promise<JSX.Element> => {
   const client = createClient();

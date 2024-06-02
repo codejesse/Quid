@@ -32,13 +32,18 @@ const Pricing = ({ slice }: PricingProps): JSX.Element => {
             {slice.primary.prices.map((item, index) => (
               // Render the item
               <>
-              {/* {console.log(item.type)} */}
-                <div key={index} className={`flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-[15px] border border-[F4F4F4] shadow xl:p-8 ${item.type === "Professional" ? "border-[#EB632B]" : ""}`}>
+                {/* {console.log(item.type)} */}
+                <div
+                  key={index}
+                  className={`flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-[15px] border border-[F4F4F4] shadow xl:p-8 ${item.type === "Professional" ? "border-[#EB632B]" : ""}`}
+                >
                   {item.type === "Professional" ? (
                     <div className="border border-[#EB632B] bg-white absolute rounded-[25px] w-fit px-4 p-2 lg:bottom-[150px]">
                       🔥 Popular
                     </div>
-                  ) : " "}
+                  ) : (
+                    " "
+                  )}
                   <h3 className="mb-4 text-2xl font-semibold">{item.type}</h3>
                   <p className="font-light text-gray-500 sm:text-lg">
                     {item.description}

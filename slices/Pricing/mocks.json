@@ -1,0 +1,343 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"prices": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"type",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Starter"
+								}
+							],
+							[
+								"button_link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io"
+									}
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Best option for personal use & for your next project."
+								}
+							],
+							[
+								"price",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "$29"
+								}
+							],
+							[
+								"features",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Individual configuration",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "No setup, or hidden fees",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Team size: 1 developer",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 11,
+														"end": 22
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Premium support: 6 months",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 17,
+														"end": 25
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Free updates: 6 months",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 14,
+														"end": 22
+													}
+												]
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"button_text",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Get started"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"type",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Professional"
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Relevant for multiple users, extended & premium support."
+								}
+							],
+							[
+								"price",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "$99"
+								}
+							],
+							[
+								"features",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Individual configuration",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "No setup, or hidden fees",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Team size: 1 developer",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 11,
+														"end": 22
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Premium support: 6 months",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 17,
+														"end": 25
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Free updates: 6 months",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 14,
+														"end": 22
+													}
+												]
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"button_text",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Get started"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"type",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Premium"
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Best for large scale uses and extended redistribution rights."
+								}
+							],
+							[
+								"price",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "$499"
+								}
+							],
+							[
+								"features",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Individual configuration",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "No setup, or hidden fees",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Team size: 1 developer",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 11,
+														"end": 22
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Premium support: 6 months",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 17,
+														"end": 25
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Free updates: 6 months",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 14,
+														"end": 22
+													}
+												]
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"button_text",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Get started"
+								}
+							]
+						]
+					}
+				]
+			},
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Designed for business teams \nlike yours."
+			},
+			"description": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth."
+			}
+		},
+		"items": []
+	}
+]

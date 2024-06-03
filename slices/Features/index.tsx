@@ -28,12 +28,12 @@ const components: JSXMapSerializer = {
 
 const icons = {
   //map each icon to the jsx icons or from icons library
-  Cards: <TbCards />,
-  Analytics: <TbBrandGoogleAnalytics />,
-  Transfers: <FaMoneyBillTransfer />,
-  Invoice: <TbInvoice />,
-  Exchange: <BsCurrencyExchange />,
-  Cash: <BsCashStack />,
+  Cards: <TbCards size={25} className="m-auto" />,
+  Analytics: <TbBrandGoogleAnalytics size={25} className="m-auto"  />,
+  Transfers: <FaMoneyBillTransfer size={25} className="m-auto"  />,
+  Invoice: <TbInvoice size={25} className="m-auto"  />,
+  Exchange: <BsCurrencyExchange size={25} className="m-auto"  />,
+  Cash: <BsCashStack size={25} className="m-auto my-auto"  />,
 };
 
 /**
@@ -110,7 +110,7 @@ const Features = ({ slice }: FeaturesProps): JSX.Element => {
           >
             <div className="w-14 h-14 bg-[#EB632B] rounded-full text-white">
               {item.icon && (
-                <div className="mx-auto py-2">{icons[item.icon]}</div>
+                <div className="py-4">{icons[item.icon]}</div>
               )}
             </div>
             <div className="text-[30px] mt-10">

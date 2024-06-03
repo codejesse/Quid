@@ -13,7 +13,7 @@ export default async function Header() {
   const settings = await client.getSingle("settings");
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-8 lg:px-14">
+    <nav className="flex items-center justify-between flex-wrap p-3 lg:p-8 lg:px-14">
       <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
         <Logo />
       </div>

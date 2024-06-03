@@ -64,7 +64,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                 // Render the item
                 <PrismicNextImage
                   field={item.company_logo}
-                  className="w-17"
+                  className="w-16"
                 />
               ))}
             </>

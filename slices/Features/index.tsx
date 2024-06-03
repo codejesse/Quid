@@ -33,7 +33,7 @@ const icons = {
   Transfers: <FaMoneyBillTransfer size={25} className="m-auto"  />,
   Invoice: <TbInvoice size={25} className="m-auto"  />,
   Exchange: <BsCurrencyExchange size={25} className="m-auto"  />,
-  Cash: <BsCashStack size={25} className="m-auto"  />,
+  Cash: <BsCashStack size={25} className="m-auto my-auto"  />,
 };
 
 /**
@@ -110,7 +110,7 @@ const Features = ({ slice }: FeaturesProps): JSX.Element => {
           >
             <div className="w-14 h-14 bg-[#EB632B] rounded-full text-white">
               {item.icon && (
-                <div className="mx-auto py-2">{icons[item.icon]}</div>
+                <div className="py-4">{icons[item.icon]}</div>
               )}
             </div>
             <div className="text-[30px] mt-10">
